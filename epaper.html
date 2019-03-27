@@ -1,0 +1,712 @@
+<style type="text/css" scoped>
+    .form_wrapper {
+        width: 100%;
+        margin: 10px auto;
+        color: #787878;
+        font-weight: normal;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .form-innerform {}
+
+    .form-post-success {}
+
+    .form-name {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+    }
+
+    .form-description {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    .form-error {
+        margin-bottom: 10px;
+        color: red;
+    }
+
+    .form-message {
+        margin-bottom: 10px;
+        color: green;
+    }
+
+    .form-row {
+        display: block;
+        margin-bottom: 20px;
+        padding: 7px 12px;
+    }
+
+    .form-label {
+        font-size: 15px;
+        display: inline-block;
+        font-weight: normal;
+        margin-bottom: 5px;
+        float: left;
+        font-weight: normal;
+        position: relative;
+        z-index: 0;
+        padding: 10px 5px;
+        vertical-align: middle;
+        text-align: right;
+        width: 200px;
+
+    }
+
+    .form-row.form-required .form-label:after {
+        color: #e32;
+        content: " *";
+        display: inline;
+    }
+
+    .form-helpmessage {
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: 3px;
+    }
+
+    .form-errormsg {
+        display: block;
+        color: red;
+        margin-top: 2px;
+    }
+
+    .form-selectbox,
+    .form-input,
+    .form-textarea {
+        width: 369px;
+        padding: 10px;
+        box-shadow: 0px 0px 0px #fff inset;
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        color: #787878;
+        font-family: "Lato";
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .form-checkboxgrp-row {}
+
+    .form-checkboxgrp-label {
+        font-weight: normal;
+    }
+
+    .form-checkboxgrp-checkbox {}
+
+    .form-radiogrp-row {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 5px 0;
+        text-align: right;
+        border-top: 1px solid #eaeaea;
+    }
+
+    .form-radiogrp-label {
+        font-weight: normal;
+    }
+
+    .form-radiogrp-radio {}
+
+    .form-button-wrapper .form-button.btn-default {
+        background-color: #456f9b;
+        color: #fff;
+        padding: 12px 20px;
+        margin-top: 2px;
+        /*  float: right;*/
+        border: none;
+        font-size: 15px;
+    }
+
+    .form-button-wrapper .form-button {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 600;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 13px;
+        line-height: 1.3856;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .form-button-wrapper .form-button.btn-default[disabled] {
+        background-color: #ffffff;
+        border-color: #dddddd;
+    }
+
+
+    .cta {
+
+        color: #456f9b;
+        text-align: center;
+    }
+
+    #project {
+        text-align: center;
+
+
+    }
+</style>
+
+<script type="text/javascript">
+
+ function changeButtonContent(){
+     document.getElementById("form_input_digitalpl_submit").innerHTML = "<img src='/media/img/static/Spinner.svg'/>"; 
+ };
+</script>
+
+
+<div style="width: 100%">
+    <div>
+        <p style=" font-size: 26px; font-weight: 300; text-transform: uppercase;     margin: 0 0 5px;
+    line-height: 1.35;
+    color: #161b1e;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;">Skonfiguruj e-papier do swojej aplikacji</p>
+        <div class="social"></div>
+    </div>
+    <div>
+
+
+
+        <p class="desc">Zachęcamy do wykorzystania naszego
+            <strong>
+                <a href="#project">KONFIGURATORA </a>
+            </strong>. Z chęcią wesprzemy Państwa swoim doświadczeniem na każdym etapie projektu oraz pomożemy dobrać
+            optymalne technologie
+            i rozwiązania.</p>
+
+
+
+
+
+
+
+    </div>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+    <div style="width: 92%; margin-top: 4%; margin-left: 8%;">
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="100%" viewBox="0 0 1500 800.00016" id="svg2" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="apps_digi2.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.64"
+     inkscape:cx="942.73462"
+     inkscape:cy="491.57541"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="px">
+    <sodipodi:guide
+       position="-762.85715,87.142859"
+       orientation="1,0"
+       id="guide4157" />
+    <sodipodi:guide
+       position="762.85714,847.14302"
+       orientation="1,0"
+       id="guide4159" />
+    <sodipodi:guide
+       position="449.67572,741.35742"
+       orientation="0,1"
+       id="guide4199" />
+    <sodipodi:guide
+       position="-158.57143,678.57156"
+       orientation="0,1"
+       id="guide4175" />
+    <sodipodi:guide
+       position="1202.8571,488.57152"
+       orientation="0,1"
+       id="guide4177" />
+    <sodipodi:guide
+       position="1019.2439,351.53315"
+       orientation="0,1"
+       id="guide4217" />
+    <sodipodi:guide
+       position="47.142857,61.428583"
+       orientation="1,0"
+       id="guide4236" />
+    <sodipodi:guide
+       position="1442.4978,226.27421"
+       orientation="1,0"
+       id="guide4238" />
+    <sodipodi:guide
+       position="1231.4286,422.85723"
+       orientation="0,1"
+       id="guide4240" />
+    <sodipodi:guide
+       position="232.8125,85.937517"
+       orientation="0,1"
+       id="guide4242" />
+    <sodipodi:guide
+       position="217.1875,1050.0002"
+       orientation="1,0"
+       id="guide4178" />
+    <sodipodi:guide
+       position="1273.4375,878.12518"
+       orientation="1,0"
+       id="guide4180" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-252.36214)">
+    <image
+       sodipodi:absref="/media/news_pictures/\easy_ass.jpg"
+       xlink:href="/media/news_pictures/easy_ass.jpg"
+       y="377.79074"
+       x="596.01202"
+       id="image4161"
+       preserveAspectRatio="none"
+       height="215.91733"
+       width="333.56955" />
+    <image
+       sodipodi:absref="/media/news_pictures/katy.jpg"
+       xlink:href="/media/news_pictures/katy.jpg"
+       y="375.92096"
+       x="49.381699"
+       id="image4172"
+       preserveAspectRatio="none"
+       height="214.56422"
+       width="334.00745" />
+    <image
+       sodipodi:absref="/media/news_pictures/out-in.png"
+       xlink:href="/media/news_pictures/out-in.png"
+       y="702.82916"
+       x="1107.7048"
+       id="image4183"
+       preserveAspectRatio="none"
+       height="218.69456"
+       width="333.3114" />
+    <image
+       sodipodi:absref="/media/news_pictures/sun.jpg"
+       xlink:href="/media/news_pictures/sun.jpg"
+       y="375.79074"
+       x="1104.8572"
+       id="image4205"
+       preserveAspectRatio="none"
+       height="214.61879"
+       width="334.59915" />
+    <image
+       sodipodi:absref="/media/news_pictures/time.jpg"
+       xlink:href="/media/news_pictures/time.jpg"
+       y="703.64258"
+       x="47.229088"
+       id="image4216"
+       preserveAspectRatio="none"
+       height="217.09248"
+       width="336.22098" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#565859;stroke-width:2.36879969;stroke-linecap:butt;stroke-miterlimit:2;stroke-dasharray:14.21279862, 2.36879976;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4219"
+       width="336.43628"
+       height="217.90245"
+       x="595.37775"
+       y="376.48044" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:62.50001526px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="864.14941"
+       y="312.24994"
+       id="text4221"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="864.14941"
+         y="312.24994"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:62.50001526px;font-family:Lato;-inkscape-font-specification:Lato;text-align:center;text-anchor:middle;fill:#dd8964;fill-opacity:1"
+         id="tspan4201"> E-PAPIER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:45.86253357px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#434546;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="664.41412"
+       y="629.26007"
+       id="text4225"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4227"
+         x="664.41412"
+         y="629.26007"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.79767418px;font-family:Lato;-inkscape-font-specification:Lato;fill:#434546;fill-opacity:1">łatwy w instalacji</tspan></text>
+    <image
+       sodipodi:absref="/media/news_pictures/solar.jpg"
+       xlink:href="/media/news_pictures/solar.jpg"
+       y="689.63092"
+       x="590.09735"
+       id="image4237"
+       preserveAspectRatio="none"
+       height="242.43004"
+       width="347.15979" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:46.99023056px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#434546;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="217.14471"
+       y="967.02692"
+       id="text4240"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4242"
+         x="217.14471"
+         y="967.02692"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.43200302px;font-family:lato;-inkscape-font-specification:lato;text-align:center;text-anchor:middle;fill:#434546;fill-opacity:1">wyświetlanie informacji</tspan><tspan
+         sodipodi:role="line"
+         x="219.70015"
+         y="1000.0669"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.43200302px;font-family:lato;-inkscape-font-specification:lato;text-align:center;text-anchor:middle;fill:#434546;fill-opacity:1"
+         id="tspan4257">w czasie rzeczywistym </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:46.99023056px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#434546;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="765.54236"
+       y="964.36285"
+       id="text4244"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="768.09778"
+         y="964.36285"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.43200302px;font-family:lato;-inkscape-font-specification:lato;text-align:center;text-anchor:middle;fill:#434546;fill-opacity:1"
+         id="tspan4248">energooszczędność (może być </tspan><tspan
+         sodipodi:role="line"
+         x="765.54236"
+         y="997.40283"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.43200302px;font-family:lato;-inkscape-font-specification:lato;text-align:center;text-anchor:middle;fill:#434546;fill-opacity:1"
+         id="tspan4261">zasilany panelami słonecznymi)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:45.86253357px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#434546;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1099.1118"
+       y="629.19446"
+       id="text4250"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4252"
+         x="1099.1118"
+         y="629.19446"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.79767418px;font-family:lato;-inkscape-font-specification:lato;fill:#434546;fill-opacity:1">znakomita czytelność w słońcu</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:46.99023056px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#434546;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1273.0436"
+       y="965.77509"
+       id="text4254"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4256"
+         x="1273.0436"
+         y="965.77509"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.43200302px;font-family:lato;-inkscape-font-specification:lato;text-align:center;text-anchor:middle;fill:#434546;fill-opacity:1">do aplikacji indorowych</tspan><tspan
+         sodipodi:role="line"
+         x="1273.0436"
+         y="998.81506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.43200302px;font-family:lato;-inkscape-font-specification:lato;text-align:center;text-anchor:middle;fill:#434546;fill-opacity:1"
+         id="tspan4267"> i outdorowych</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:45.86253357px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#434546;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="48.755463"
+       y="631.72253"
+       id="text4258"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4260"
+         x="48.755463"
+         y="631.72253"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.79767418px;font-family:lato;-inkscape-font-specification:lato;fill:#434546;fill-opacity:1">nieograniczone kąty widzenia</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:62.50001526px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#456f9b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="467.69714"
+       y="311.263"
+       id="text4210"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4212"
+         x="467.69714"
+         y="311.263"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:62.50001526px;font-family:lato;-inkscape-font-specification:lato;fill:#434546;fill-opacity:1">Dlaczego</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#565859;stroke-width:2.36879969;stroke-linecap:butt;stroke-miterlimit:2;stroke-dasharray:14.21279862, 2.36879976;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4219-6"
+       width="336.43628"
+       height="217.90245"
+       x="1104.6251"
+       y="374.2814" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#565859;stroke-width:2.36879969;stroke-linecap:butt;stroke-miterlimit:2;stroke-dasharray:14.21279862, 2.36879976;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4219-6-8"
+       width="336.43628"
+       height="217.90245"
+       x="47.893486"
+       y="374.90219" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#565859;stroke-width:2.36879969;stroke-linecap:butt;stroke-miterlimit:2;stroke-dasharray:14.21279862, 2.36879976;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4219-1"
+       width="336.43637"
+       height="217.9025"
+       x="47.974636"
+       y="702.97443" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#565859;stroke-width:2.36879969;stroke-linecap:butt;stroke-miterlimit:2;stroke-dasharray:14.21279862, 2.36879976;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4219-0"
+       width="336.43637"
+       height="217.9025"
+       x="594.44696"
+       y="702.88806" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#565859;stroke-width:2.36879969;stroke-linecap:butt;stroke-miterlimit:2;stroke-dasharray:14.21279862, 2.36879976;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4219-5"
+       width="336.43637"
+       height="217.9025"
+       x="1106.1274"
+       y="702.88806" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="541.42841"
+       y="332.36215"
+       id="text4246"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4249"
+         x="541.42841"
+         y="332.36215" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:62.50001526px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1020.5712"
+       y="310.36215"
+       id="text4251"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4253"
+         x="1020.5712"
+         y="310.36215"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.00001526px;font-family:lato;-inkscape-font-specification:lato;fill:#43454f;fill-opacity:0.94117647">?</tspan></text>
+  </g>
+</svg>
+</div>
+
+</div>
+
+<div id="form_wrapper_digitalpl" class="form_wrapper">
+    <form autocomplete="false" onSubmit="changeButtonContent()" role="form" method="POST" action="http://localhost:5000/sendepd"
+        id="form_digitalpl" >
+      
+        <div class="form-innerform">
+
+
+            <div class="form-page-wrapper form-page-1" data--form-page="1">
+                <div id="form_digitalpl_info" class="form-row form-freehtml form-field-8">
+                    <div id="form_input_digitalpl_info" name="form[info]"  class="form-freehtml">
+                        <br />
+                        <strong>
+                            <p style="color: #dd8964; font-size: 21px; font-weight: 400;" id="project">A jaka jest Twoja
+                                aplikacja?</p>
+                        </strong>
+                        <hr />
+                        <p class="cta">Wypełnij formularz, aby w ciągu 24h otrzymać ofertę</p>
+                    </div>
+                </div>
+                <div id="form_digitalpl_aplikacja_umiejscowienie" data-validate="aplikacja_umiejscowienie"
+                    data-validation-type="select" class="form-row form-select form-field-1 form-required">
+                    <label id="form_label_digitalpl_aplikacja_umiejscowienie"
+                        for="form_input_digitalpl_aplikacja_umiejscowienie" class="form-label">Aplikacja
+                        (umiejscowienie)</label>
+                    <select id="form_input_digitalpl_aplikacja_umiejscowienie" name="aplikacja_umiejscowienie"
+                        value="nie wiem" class="form-selectbox">
+                        <option value="in-door">in-door</option>
+                        <option value="out-door">out-door</option>
+                        <option value="nie wiem" selected="selected">nie wiem</option>
+                    </select>
+                    <span class="form-errormsg" style="display: none;">This is required.</span>
+                </div>
+               
+                <div id="form_digitalpl_rozmiar_ekranu" data-validate="rozmiar_ekranu" data-validation-type="select"
+                    class="form-row form-select form-field-2 form-required">
+                    <label id="form_label_digitalpl_rozmiar_ekranu" for="form_input_digitalpl_rozmiar_ekranu"
+                        class="form-label">Rozmiar ekranu</label>
+                    <select id="form_input_digitalpl_rozmiar_ekranu" name="rozmiar_ekranu" value="nie wiem"
+                        class="form-selectbox">
+                        <option value="1,1&quot;">1,1&quot;</option>
+                        <option value="1,54&quot;">1,54&quot;</option>
+                        <option value="2,13&quot;">2,13&quot;</option>
+                        <option value="2,9&quot;">2,9&quot;</option>
+                        <option value="4,2&quot;">4,2&quot;</option>
+                        <option value="7,5&quot;">7,5&quot;</option>
+                        <option value="13,3&quot;">13,3&quot;</option>
+                        <option value="31,2&quot;">31,2&quot;</option>
+                        <option value="42&quot;">42&quot;</option>
+                        <option value="&gt;42&quot;">&gt;42&quot;</option>
+                        <option value="nie wiem" selected="selected">nie wiem</option>
+                    </select>
+                    <span class="form-errormsg" style="display: none;">This is required.</span>
+                </div>
+
+                <div id="form_digitalpl_tresc" data-validate="tresc" data-validation-type="select"
+                    class="form-row form-select form-field-3 form-required">
+                    <label id="form_label_digitalpl_tresc" for="form_input_digitalpl_tresc"
+                        class="form-label">Treść</label>
+                    <select id="form_input_digitalpl_tresc" name="tresc"  class="form-selectbox">
+                        <option value="1-bit (czarno-biała)">1-bit (czarno-biała)</option>
+                        <option value="1-bit (czarno-biało-czerwona)">1-bit (czarno-biało-czerwona)</option>
+                        <option value="2-bit (4 odcienie szarości)">2-bit (4 odcienie szarości)</option>
+                        <option value="4-bit (16 odcieni szarości)">4-bit (16 odcieni szarości)</option>
+                        <option value="kolorowa">kolorowa</option>
+                    </select>
+                    <span class="form-errormsg" style="display: none;">Pole wymagane.</span>
+                </div>
+
+                <div id="form_digitalpl_sposob_komunikacji" data-validate="sposob_komunikacji"
+                    data-validation-type="select" class="form-row form-select form-field-4 form-required">
+                    <label id="form_label_digitalpl_sposob_komunikacji" for="form_input_digitalpl_sposob_komunikacji"
+                        class="form-label">Sposób komunikacji</label>
+                    <select id="form_input_digitalpl_sposob_komunikacji" name="sposob_komunikacji"
+                        value="nie wiem" class="form-selectbox">
+                        <option value="WiFi">WiFi</option>
+                        <option value="3G">3G</option>
+                        <option value="inny">inny</option>
+                        <option value="nie wiem" selected="selected">nie wiem</option>
+                    </select>
+                    <span class="form-errormsg" style="display: none;">Pole wymagane.</span>
+                </div>
+
+                <div id="form_digitalpl_ekran_dotykowy" data-validate="ekran_dotykowy" data-validation-type="select"
+                    class="form-row form-select form-field-5 form-required">
+                    <label id="form_label_digitalpl_ekran_dotykowy" for="form_input_digitalpl_ekran_dotykowy"
+                        class="form-label">Ekran dotykowy</label>
+                    <select id="form_input_digitalpl_ekran_dotykowy" name="ekran_dotykowy" value="nie wiem"
+                        class="form-selectbox">
+                        <option value="tak">tak</option>
+                        <option value="nie">nie</option>
+                        <option value="nie wiem" selected="selected">nie wiem</option>
+                    </select>
+                    <span class="form-errormsg" style="display: none;">Pole wymagane.</span>
+                </div>
+
+                <div id="form_digitalpl_zasilanie" data-validate="zasilanie" data-validation-type="select"
+                    class="form-row form-select form-field-6 form-required">
+                    <label id="form_label_digitalpl_zasilanie" for="form_input_digitalpl_zasilanie"
+                        class="form-label">Zasilanie</label>
+                    <select id="form_input_digitalpl_zasilanie" name="zasilanie" value="nie wiem"
+                        class="form-selectbox">
+                        <option value="praca na baterii">praca na baterii</option>
+                        <option value="stałe zasilanie">stałe zasilanie</option>
+                        <option value="ogniwa solarne">ogniwa solarne</option>
+                        <option value="inne">inne</option>
+                        <option value="nie wiem" selected="selected">nie wiem</option>
+                    </select>
+                    <span class="form-errormsg" style="display: none;">Pole wymagane.</span>
+                </div>
+
+                <div id="form_digitalpl_opis_wyswietlanej_tresci" class="form-row form-text form-field-7">
+                    <label id="form_label_digitalpl_opis_wyswietlanej_tresci"
+                        for="form_input_digitalpl_opis_wyswietlanej_tresci" class="form-label">Opis wyświetlanej treści/
+                        dodatkowe informacje</label>
+                    <textarea id="form_input_digitalpl_opis_wyswietlanej_tresci" name="opis_wyswietlanej_tresci"
+                        class="form-textarea" style="margin: 0px; width: 368px; height: 71px;"></textarea>
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_digitalpl_info" class="form-row form-freehtml form-field-8">
+                    <div id="form_input_digitalpl_info" name="form[info]" value="" class="form-freehtml">
+                        <br />
+                        <strong>Informacje kontaktowe</strong>
+                        <hr />
+                    </div>
+                </div>
+
+                <div id="form_digitalpl_imie_i_nazwisko" data-validate="imie_i_nazwisko" data-validation-type="text"
+                    class="form-row form-text form-field-9 form-required">
+                    <label id="form_label_digitalpl_imie_i_nazwisko" for="form_input_digitalpl_imie_i_nazwisko"
+                        class="form-label">Imię i nazwisko</label>
+                    <input id="form_input_digitalpl_imie_i_nazwisko" name="imie_i_nazwisko"
+                        class="form-input" type="text" required />
+                    <span class="form-errormsg" style="display: none;">Pole wymagane.</span>
+                </div>
+
+                <div id="form_digitalpl_firma" data-validate="firma" data-validation-type="text"
+                    class="form-row form-text form-field-10 form-required">
+                    <label id="form_label_digitalpl_firma" for="form_input_digitalpl_firma"
+                        class="form-label">Firma</label>
+                    <input id="form_input_digitalpl_firma" name="firma"  class="form-input" type="text" required />
+                    <span class="form-errormsg" style="display: none;">Pole wymagane.</span>
+                </div>
+
+                <div id="form_digitalpl_email" data-validate="email" data-validation-type="email"
+                    class="form-row form-email form-field-11 form-required">
+                    <label id="form_label_digitalpl_email" for="form_input_digitalpl_email"
+                        class="form-label">E-mail</label>
+                    <input id="form_input_digitalpl_email" name="email"  class="form-input"
+                        type="email" required/>
+                    <span class="form-errormsg" style="display: none;">Pole wymagane.</span>
+                </div>
+
+                <div id="form_digitalpl_telefon" class="form-row form-tel form-field-12">
+                    <label id="form_label_digitalpl_telefon" for="form_input_digitalpl_telefon"
+                        class="form-label">Telefon</label>
+                    <input id="form_input_digitalpl_telefon" name="telefon" value="" class="form-input"
+                        type="tel" />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_digitalpl_wymagane" class="form-row form-freetext form-field-13">
+                    <div id="form_input_digitalpl_wymagane" name="wymagane"  class="form-freetext">
+                        <span style="color: rgb(184, 49, 47);">*</span> - pola wymagane
+                    </div>
+                </div>
+
+                <div id="form_digitalpl_submit" class="form-row form-button-wrapper form-field-14">
+                    <button type="submit"  id="form_input_digitalpl_submit" name="submit"
+                        value="" class="form-button btn btn-default" value="1" >Tak, chcę otrzymać wycenę</button>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="form[formId]" id="form_digitalpl_id" value="8" />
+        <input type="hidden" name="form[return]" id="form_digitalpl_return" value="" />
+        <input type="hidden" name="form[formName]" id="form_digitalpl_name" value="digitalpl" />
+
+    </form>
+    <br>
+    <p class="policy">Wysyłanie zapytania jest równoznaczne ze zgodą na przetwarzanie danych w celu jego realizacji
+        zgodnie z naszą
+        <a href="https://www.unisystem.pl/pl/privacy-policy-cookie-restriction-mode/">
+            polityką prywatności</a>.</p>
+
+</div>
