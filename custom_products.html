@@ -1,0 +1,505 @@
+<style type="text/css" scoped>
+    .form_wrapper {
+        width: 100%;
+        margin: 10px auto;
+        color: #787878;
+        font-weight: normal;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .form-innerform {}
+
+    .form-post-success {}
+
+    .form-name {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+    }
+
+    .form-description {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    .form-error {
+        margin-bottom: 10px;
+        color: red;
+    }
+
+    .form-message {
+        margin-bottom: 10px;
+        color: green;
+    }
+
+    .form-row {
+        display: block;
+        margin-bottom: 20px;
+        padding: 7px 12px;
+    }
+
+    .form-label {
+        font-size: 15px;
+        display: inline-block;
+        font-weight: normal;
+        margin-bottom: 5px;
+        /* float: left; */
+        font-weight: bold;
+        position: relative;
+        z-index: 0;
+        padding: 10px 5px;
+        /* vertical-align: middle; */
+        /* text-align: right; */
+        width: 200px;
+
+    }
+
+    .form-row.form-required .form-label:after {
+        color: #e32;
+        content: " *";
+        display: inline;
+    }
+
+    .form-helpmessage {
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: 3px;
+    }
+
+    .form-errormsg {
+        display: block;
+        color: red;
+        margin-top: 2px;
+    }
+
+    .form-selectbox,
+    .form-input,
+    .form-textarea {
+        width: 369px;
+        padding: 10px;
+        box-shadow: 0px 0px 0px #fff inset;
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        color: #787878;
+        font-family: "Lato";
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .form-checkboxgrp-row {}
+
+    .form-checkboxgrp-label {
+        font-weight: normal;
+    }
+
+    .form-checkboxgrp-checkbox {}
+
+    .form-radiogrp-row {
+        /* float: left;*/
+        /* width: 100%;*/
+        margin: 0;
+        padding: 5px 0;
+        /*  text-align: left; */
+        /*  border-top: 1px solid #eaeaea; */
+    }
+
+    .form-radiogrp-label {
+        font-weight: normal;
+        padding-right: 20px;
+    }
+
+    .form-radiogrp-radio {}
+
+    .form-button-wrapper .form-button.btn-default {
+        background-color: #456f9b;
+        color: #fff;
+        padding: 12px 20px;
+        margin-top: 2px;
+        /*  float: right;*/
+        border: none;
+        font-size: 16px;
+        width: 270px;
+        height: 60px;
+    }
+
+    .form-button-wrapper .form-button {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 600;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 13px;
+        line-height: 1.3856;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .form-button-wrapper .form-button.btn-default[disabled] {
+        background-color: #ffffff;
+        border-color: #dddddd;
+    }
+
+    .cta {
+
+        color: #456f9b;
+        text-align: center;
+    }
+
+    #project {
+        text-align: center;
+
+
+    }
+
+    .policy {
+        font-size: small;
+        text-align: center;
+
+
+
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    function changeButtonContent(){
+        document.getElementById("form_input_productconfiguratorpl_submit").innerHTML = "<img src='/media/img/static/Spinner.svg'/>"; 
+    };
+   </script>
+
+
+
+
+<p class="desc">Od wielu lat firma Unisystem pomaga zaprojektować, a następnie wykonuje rozwiązania częściowo oraz w pełni customizowane.
+    Oferujemy dopasowane do projektów klienta wyświetlacze TFT, OLED, mono LCM oraz panele dotykowe. Dostosowujemy kształt,
+    rozmiar, kolor oraz inne parametry techniczne. Ponadto dzięki wieloletniej współpracy z największymi producentami koszty
+    NRE (tooling) zredukowaliśmy do minimum.</p>
+
+<p class="desc"> Proces tworzenia produktu customizowanego rozpoczyna się od przedstawienia przez klienta pomysłu oraz wspólnego ustalenia
+    głównej koncepcji (kształt, rozmiar, typ wyświetlacza, złącza, etc.). Na tej podstawie Unisystem tworzy ofertę (do 5
+    dni roboczych) i przedstawia ją klientowi. Po zaakceptowaniu wyceny oraz przekazaniu projektu do realizacji, Unisystem
+    sporządza dokładny projekt nowej aplikacji. Następnie klient zapoznaje się ponownie z projektem i po akceptacji oraz
+    opłaceniu kosztów toolingu, Unisystem wykonuje próbki zaprojektowanego urządzenia (20 – 40 dni roboczych). Po zatwierdzeniu
+    próbek, klient może złożyć zamówienie produkcyjne. Proszę zwrócić uwagę, że podane terminy są typowe dla większości projektów,
+    jednakże w szczególnych przypadkach mogą ulec zmianie.</p>
+
+<p class="desc">Zachęcamy do wykorzystania naszego
+    <strong>
+        <a href="#project">KONFIGURATORA </a>
+    </strong>. Z chęcią wesprzemy Państwa swoim doświadczeniem na każdym etapie projektu oraz pomożemy dobrać optymalne technologie
+    i rozwiązania.</p>
+
+<img class="custom" src="/media/img/static/customsPLpdf.svg">
+
+<br>
+<br>
+<br>
+
+
+<h2 id="project">Dobierz optymalne komponenty do swojego projektu</h2>
+<p class="cta">Wypełnij formularz, aby w ciągu 24h otrzymać ofertę</p>
+<br>
+
+
+
+<div id="form_wrapper_productconfiguratorpl" class="form_wrapper">
+    <form autocomplete="false" onSubmit="changeButtonContent()" role="form" method="POST" action="https://stark-tor-91462.herokuapp.com/sendcustom" id="form_productconfiguratorpl">
+
+    
+        <div class="form-innerform">
+
+
+            <div class="form-page-wrapper form-page-1" data--form-page="1">
+
+                <div id="form_productconfiguratorpl_wymiary" class="form-row form-text form-field-1">
+                    <label id="form_label_productconfiguratorpl_wymiary" for="form_input_productconfiguratorpl_wymiary" class="form-label">Wymiary</label>
+                    <input id="form_input_productconfiguratorpl_wymiary" name="wymiary"  placeholder="orientacyjnie (mm x mm x mm)"
+                        class="form-input" type="text" />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_typ_wyswietlacza" class="form-row form-radiogrp form-field-2">
+                    <label class="form-label" for="form_radiogrp_radio_typ_wyswietlacza_EPaper1">Technologia wyświetlacza</label>
+                    <div class="form-radiogrp-row">
+                        <label id="form_radiogrp_label_typ_wyswietlacza_EPaper0" for="form_radiogrp_radio_typ_wyswietlacza_EPaper0" class="form-radiogrp-label">
+                            <input name="typ_wyswietlacza" class="form-radiogrp-radio"  id="form_radiogrp_radio_typ_wyswietlacza_EPaper0"
+                                type="radio" value="E-Paper" /> E-Paper
+                        </label>
+
+                        <label id="form_radiogrp_label_typ_wyswietlacza_LCDSTN1" for="form_radiogrp_radio_typ_wyswietlacza_LCDSTN1" class="form-radiogrp-label">
+                            <input name="typ_wyswietlacza" class="form-radiogrp-radio"  id="form_radiogrp_radio_typ_wyswietlacza_LCDSTN1"
+                                type="radio" value="LCD-STN" /> LCD-STN
+                        </label>
+
+                        <label id="form_radiogrp_label_typ_wyswietlacza_LCDTFT2" for="form_radiogrp_radio_typ_wyswietlacza_LCDTFT2" class="form-radiogrp-label">
+                            <input name="typ_wyswietlacza" class="form-radiogrp-radio"  id="form_radiogrp_radio_typ_wyswietlacza_LCDTFT2"
+                                type="radio" value="LCD-TFT" /> LCD-TFT
+                        </label>
+
+                        <label id="form_radiogrp_label_typ_wyswietlacza_OLED3" for="form_radiogrp_radio_typ_wyswietlacza_OLED3" class="form-radiogrp-label">
+                            <input name="typ_wyswietlacza" class="form-radiogrp-radio" id="form_radiogrp_radio_typ_wyswietlacza_OLED3"
+                                type="radio" value="OLED" /> OLED
+                        </label>
+
+                        <label id="form_radiogrp_label_typ_wyswietlacza_inna4" for="form_radiogrp_radio_typ_wyswietlacza_inna4" class="form-radiogrp-label">
+                            <input name="typ_wyswietlacza" class="form-radiogrp-radio"  id="form_radiogrp_radio_typ_wyswietlacza_inna4"
+                                type="radio" value="inna" /> inna
+                        </label>
+                    </div>
+                    <div class="form-radiogrp-row">
+                        <label id="form_radiogrp_label_typ_wyswietlacza_bezwyswietlacza5" for="form_radiogrp_radio_typ_wyswietlacza_bezwyswietlacza5"
+                            class="form-radiogrp-label">
+                            <input name="typ_wyswietlacza" class="form-radiogrp-radio"  id="form_radiogrp_radio_typ_wyswietlacza_bezwyswietlacza5"
+                                type="radio" value="bez wyświetlacza" /> bez wyświetlacza
+                        </label>
+                    </div>
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_panel_dotykowy" class="form-row form-radiogrp form-field-3">
+                    <label class="form-label" for="form_radiogrp_radio_panel_dotykowy_rezystancyjny1">Panel dotykowy</label>
+                    <div class="form-radiogrp-row">
+                        <label id="form_radiogrp_label_panel_dotykowy_rezystancyjny0" for="form_radiogrp_radio_panel_dotykowy_rezystancyjny0"
+                            class="form-radiogrp-label">
+                            <input name="panel_dotykowy" class="form-radiogrp-radio"  id="form_radiogrp_radio_panel_dotykowy_rezystancyjny0"
+                                type="radio" value="rezystancyjny" /> rezystancyjny
+                        </label>
+
+                        <label id="form_radiogrp_label_panel_dotykowy_pojemnosciowy1" for="form_radiogrp_radio_panel_dotykowy_pojemnosciowy1"
+                            class="form-radiogrp-label">
+                            <input name="panel_dotykowy" class="form-radiogrp-radio"  id="form_radiogrp_radio_panel_dotykowy_pojemnosciowy1"
+                                type="radio" value="pojemnościowy" /> pojemnościowy
+                        </label>
+
+                        <label id="form_radiogrp_label_panel_dotykowy_podczerwony2" for="form_radiogrp_radio_panel_dotykowy_podczerwony2"
+                            class="form-radiogrp-label">
+                            <input name="panel_dotykowy" class="form-radiogrp-radio"  id="form_radiogrp_radio_panel_dotykowy_podczerwony2"
+                                type="radio" value="podczerwony" /> podczerwony
+                        </label>
+
+                        <label id="form_radiogrp_label_panel_dotykowy_brak3" for="form_radiogrp_radio_panel_dotykowy_brak3" class="form-radiogrp-label">
+                            <input name="panel_dotykowy" class="form-radiogrp-radio"  id="form_radiogrp_radio_panel_dotykowy_brak3"
+                                type="radio" value="brak" /> brak
+                        </label>
+                    </div>
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_srodowisko" class="form-row form-checkboxgrp form-field-4">
+                    <label class="form-label" for="form_checkboxgrp_checkbox_srodowisko_outdoor1">Środowisko</label>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_srodowisko_outdoor0" for="form_checkboxgrp_checkbox_srodowisko_outdoor0" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="srodowisko" id="form_checkboxgrp_checkbox_srodowisko_outdoor0"
+                                type="checkbox" value="outdoor" /> outdoor
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_srodowisko_semioutdoor1" for="form_checkboxgrp_checkbox_srodowisko_semioutdoor1"
+                            class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="srodowisko" id="form_checkboxgrp_checkbox_srodowisko_semioutdoor1"
+                                type="checkbox" value="semi-outdoor" /> semi-outdoor
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_srodowisko_indoor2" for="form_checkboxgrp_checkbox_srodowisko_indoor2" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="srodowisko" id="form_checkboxgrp_checkbox_srodowisko_indoor2"
+                                type="checkbox" value="indoor" /> indoor
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_srodowisko_pracawtrudnychwarunkach3" for="form_checkboxgrp_checkbox_srodowisko_pracawtrudnychwarunkach3"
+                            class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="srodowisko" id="form_checkboxgrp_checkbox_srodowisko_pracawtrudnychwarunkach3"
+                                type="checkbox" value="praca w trudnych warunkach" /> praca w trudnych warunkach
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_srodowisko_inne4" for="form_checkboxgrp_checkbox_srodowisko_inne4" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="srodowisko" id="form_checkboxgrp_checkbox_srodowisko_inne4"
+                                type="checkbox" value="inne" /> inne
+                        </label>
+                    </div>
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_zakres_temperatur_pracy_m" class="form-row form-text form-field-5">
+                    <label id="form_label_productconfiguratorpl_zakres_temperatur_pracy_m" for="form_input_productconfiguratorpl_zakres_temperatur_pracy_m"
+                        class="form-label">Zakres temperatur pracy</label>
+                    <input id="form_input_productconfiguratorpl_zakres_temperatur_pracy_m" name="zakres_temperatur_pracy"
+                         placeholder="(min.—max. °C)" class="form-input" type="text" />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_branza" class="form-row form-checkboxgrp form-field-6">
+                    <label class="form-label" for="form_checkboxgrp_checkbox_branza_militarna1">Branża</label>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_militarna0" for="form_checkboxgrp_checkbox_branza_militarna0" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_militarna0"
+                                type="checkbox" value="militarna" /> militarna
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_automatykaprzemyslowa1" for="form_checkboxgrp_checkbox_branza_automatykaprzemyslowa1"
+                            class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_automatykaprzemyslowa1"
+                                type="checkbox" value="automatyka przemysłowa" /> automatyka przemysłowa
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_medyczna2" for="form_checkboxgrp_checkbox_branza_medyczna2" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_medyczna2"
+                                type="checkbox" value="medyczna" /> medyczna
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_transport3" for="form_checkboxgrp_checkbox_branza_transport3" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_transport3"
+                                type="checkbox" value="transport" /> transport
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_POS4" for="form_checkboxgrp_checkbox_branza_POS4" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_POS4"
+                                type="checkbox" value="POS" /> POS
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_digitalsignage5" for="form_checkboxgrp_checkbox_branza_digitalsignage5"
+                            class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_digitalsignage5"
+                                type="checkbox" value="digital signage" /> digital signage
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_IOT6" for="form_checkboxgrp_checkbox_branza_IOT6" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_IOT6"
+                                type="checkbox" value="IOT" /> IOT
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_IIOT7" for="form_checkboxgrp_checkbox_branza_IIOT7" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_IIOT7"
+                                type="checkbox" value="IIOT" /> IIOT
+                        </label>
+                    </div>
+                    <div class="form-checkboxgrp-row">
+                        <label id="form_checkboxgrp_label_branza_inna8" for="form_checkboxgrp_checkbox_branza_inna8" class="form-checkboxgrp-label">
+                            <input class="form-checkboxgrp-checkbox" name="branza" id="form_checkboxgrp_checkbox_branza_inna8"
+                                type="checkbox" value="inna" /> inna
+                        </label>
+                    </div>
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_planowane_rozpoczecie_pro" class="form-row form-text form-field-7">
+                    <label id="form_label_productconfiguratorpl_planowane_rozpoczecie_pro" for="form_input_productconfiguratorpl_planowane_rozpoczecie_pro"
+                        class="form-label">Planowane rozpoczęcie produkcji</label>
+                    <input id="form_input_productconfiguratorpl_planowane_rozpoczecie_pro" name="rozpoczecie"
+                         placeholder="(czas w miesiącach lub data)" class="form-input" type="text" />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_ilosc_szacowane_roczne_za" class="form-row form-text form-field-8">
+                    <label id="form_label_productconfiguratorpl_ilosc_szacowane_roczne_za" for="form_input_productconfiguratorpl_ilosc_szacowane_roczne_za"
+                        class="form-label">Ilość (szacowane roczne zapotrzebowanie)</label>
+                    <input id="form_input_productconfiguratorpl_ilosc_szacowane_roczne_za" name="zapotrzebowanie"
+                         class="form-input" type="text" />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_aplikacja_koncowa" class="form-row form-text form-field-9">
+                    <label id="form_label_productconfiguratorpl_aplikacja_koncowa" for="form_input_productconfiguratorpl_aplikacja_koncowa"
+                        class="form-label">Aplikacja końcowa</label>
+                    <input id="form_input_productconfiguratorpl_aplikacja_koncowa" name="aplikacja_koncowa"  class="form-input"
+                        type="text" />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_opis_wyswietlanej_tresci" class="form-row form-text form-field-10">
+                    <label id="form_label_productconfiguratorpl_opis_wyswietlanej_tresci" for="form_input_productconfiguratorpl_opis_wyswietlanej_tresci"
+                        class="form-label">Dodatkowe informacje</label>
+                    <textarea id="form_input_productconfiguratorpl_opis_wyswietlanej_tresci" name="opis_wyswietlanej_tresci"
+                        class="form-textarea"></textarea>
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_info" class="form-row form-freehtml form-field-11">
+                    <div id="form_input_productconfiguratorpl_info" name="info"  class="form-freehtml">
+                        <br />
+                        <strong>Informacje kontaktowe</strong>
+                        <hr />
+                    </div>
+                </div>
+
+                <div id="form_productconfiguratorpl_imie_i_nazwisko" data-validate="imie_i_nazwisko" data-validation-type="text" class="form-row form-text form-field-12 form-required">
+                    <label id="form_label_productconfiguratorpl_imie_i_nazwisko" for="form_input_productconfiguratorpl_imie_i_nazwisko"
+                        class="form-label">Imię i nazwisko</label>
+                    <input id="form_input_productconfiguratorpl_imie_i_nazwisko" name="imie_i_nazwisko"  class="form-input"
+                        type="text" />
+                    <span class="form-errormsg" style="display: none;">This is required.</span>
+                </div>
+
+                <div id="form_productconfiguratorpl_firma" data-validate="firma" data-validation-type="text" class="form-row form-text form-field-13 form-required">
+                    <label id="form_label_productconfiguratorpl_firma" for="form_input_productconfiguratorpl_firma" class="form-label">Firma</label>
+                    <input id="form_input_productconfiguratorpl_firma" name="firma"  class="form-input" type="text"
+                    />
+                    <span class="form-errormsg" style="display: none;">This is required.</span>
+                </div>
+
+                <div id="form_productconfiguratorpl_email" data-validate="email" data-validation-type="email" class="form-row form-email form-field-14 form-required">
+                    <label id="form_label_productconfiguratorpl_email" for="form_input_productconfiguratorpl_email" class="form-label">E-mail</label>
+                    <input id="form_input_productconfiguratorpl_email" name="email"  class="form-input" type="email"
+                    />
+                    <span class="form-errormsg" style="display: none;">This is required.</span>
+                </div>
+
+                <div id="form_productconfiguratorpl_telefon" class="form-row form-tel form-field-15">
+                    <label id="form_label_productconfiguratorpl_telefon" for="form_input_productconfiguratorpl_telefon" class="form-label">Telefon</label>
+                    <input id="form_input_productconfiguratorpl_telefon" name="telefon"  class="form-input" type="tel"
+                    />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_wymagane" class="form-row form-freetext form-field-16">
+                    <div id="form_input_productconfiguratorpl_wymagane" name="wymagane"  class="form-freetext">
+                        <span style="color: rgb(184, 49, 47);">*</span> - pola wymagane
+                    </div>
+                </div>
+
+                <div id="form_productconfiguratorpl_nie_jestem_robotem" style="display: none;" class="form-row form-text form-field-17">
+                    <label id="form_label_productconfiguratorpl_nie_jestem_robotem" for="form_input_productconfiguratorpl_nie_jestem_robotem"
+                        class="form-label">Nie jestem robotem</label>
+                    <input id="form_input_productconfiguratorpl_nie_jestem_robotem" name="nie_jestem_robotem"  class="form-input"
+                        type="text" />
+                    <span class="form-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="form_productconfiguratorpl_submit" class="form-row form-button-wrapper form-field-18">
+                    <button type="submit"  id="form_input_productconfiguratorpl_submit" name="submit"
+                         class="form-button btn btn-default" value="1">Tak, chcę otrzymać wycenę</button>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="form[formId]" id="form_productconfiguratorpl_id" value="12" />
+        <input type="hidden" name="form[return]" id="form_productconfiguratorpl_return"  />
+        <input type="hidden" name="form[formName]" id="form_productconfiguratorpl_name" value="productconfiguratorpl"
+        />
+
+    </form>
+    <br>
+    <p class="policy">Wysyłanie zapytania jest równoznaczne ze zgodą na przetwarzanie danych w celu jego realizacji zgodnie z naszą
+        <a href="https://www.unisystem.pl/pl/privacy-policy-cookie-restriction-mode/">
+        polityką prywatności</a>.</p>
+</div>

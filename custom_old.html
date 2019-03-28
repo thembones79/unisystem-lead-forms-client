@@ -1,0 +1,515 @@
+<style type="text/css" scoped>
+    .mauticform_wrapper {
+        width: 100%;
+        margin: 10px auto;
+        color: #787878;
+        font-weight: normal;
+        font-family: 'Lato', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .mauticform-innerform {}
+
+    .mauticform-post-success {}
+
+    .mauticform-name {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 3px;
+    }
+
+    .mauticform-description {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    .mauticform-error {
+        margin-bottom: 10px;
+        color: red;
+    }
+
+    .mauticform-message {
+        margin-bottom: 10px;
+        color: green;
+    }
+
+    .mauticform-row {
+        display: block;
+        margin-bottom: 20px;
+        padding: 7px 12px;
+    }
+
+    .mauticform-label {
+        font-size: 15px;
+        display: inline-block;
+        font-weight: normal;
+        margin-bottom: 5px;
+        /* float: left; */
+        font-weight: bold;
+        position: relative;
+        z-index: 0;
+        padding: 10px 5px;
+        /* vertical-align: middle; */
+        /* text-align: right; */
+        width: 200px;
+
+    }
+
+    .mauticform-row.mauticform-required .mauticform-label:after {
+        color: #e32;
+        content: " *";
+        display: inline;
+    }
+
+    .mauticform-helpmessage {
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: 3px;
+    }
+
+    .mauticform-errormsg {
+        display: block;
+        color: red;
+        margin-top: 2px;
+    }
+
+    .mauticform-selectbox,
+    .mauticform-input,
+    .mauticform-textarea {
+        width: 369px;
+        padding: 10px;
+        box-shadow: 0px 0px 0px #fff inset;
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        color: #787878;
+        font-family: "Lato";
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .mauticform-checkboxgrp-row {}
+
+    .mauticform-checkboxgrp-label {
+        font-weight: normal;
+    }
+
+    .mauticform-checkboxgrp-checkbox {}
+
+    .mauticform-radiogrp-row {
+        /* float: left;*/
+        /* width: 100%;*/
+        margin: 0;
+        padding: 5px 0;
+        /*  text-align: left; */
+        /*  border-top: 1px solid #eaeaea; */
+    }
+
+    .mauticform-radiogrp-label {
+        font-weight: normal;
+        padding-right: 20px;
+    }
+
+    .mauticform-radiogrp-radio {}
+
+    .mauticform-button-wrapper .mauticform-button.btn-default {
+        background-color: #456f9b;
+        color: #fff;
+        padding: 12px 20px;
+        margin-top: 2px;
+        /*  float: right;*/
+        border: none;
+        font-size: 15px;
+    }
+
+    .mauticform-button-wrapper .mauticform-button {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 600;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 13px;
+        line-height: 1.3856;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .mauticform-button-wrapper .mauticform-button.btn-default[disabled] {
+        background-color: #ffffff;
+        border-color: #dddddd;
+    }
+
+    .cta {
+
+        color: #456f9b;
+        text-align: center;
+    }
+
+    #project {
+        text-align: center;
+
+
+    }
+
+    .policy {
+        font-size: small;
+        text-align: center;
+
+
+
+    }
+</style>
+
+<script type="text/javascript">
+    /** This section is only needed once per page if manually copying **/
+    if (typeof MauticSDKLoaded == 'undefined') {
+        var MauticSDKLoaded = true;
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://unisystem.mautic.net/mautic/media/js/mautic-form.js';
+        script.onload = function () {
+            MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = 'https://unisystem.mautic.net';
+        var MauticLang = {
+            'submittingMessage': "Please wait..."
+        }
+    }
+</script>
+
+
+
+
+<p class="desc">Od wielu lat firma Unisystem pomaga zaprojektować, a następnie wykonuje rozwiązania częściowo oraz w pełni customizowane.
+    Oferujemy dopasowane do projektów klienta wyświetlacze TFT, OLED, mono LCM oraz panele dotykowe. Dostosowujemy kształt,
+    rozmiar, kolor oraz inne parametry techniczne. Ponadto dzięki wieloletniej współpracy z największymi producentami koszty
+    NRE (tooling) zredukowaliśmy do minimum.</p>
+
+<p class="desc"> Proces tworzenia produktu customizowanego rozpoczyna się od przedstawienia przez klienta pomysłu oraz wspólnego ustalenia
+    głównej koncepcji (kształt, rozmiar, typ wyświetlacza, złącza, etc.). Na tej podstawie Unisystem tworzy ofertę (do 5
+    dni roboczych) i przedstawia ją klientowi. Po zaakceptowaniu wyceny oraz przekazaniu projektu do realizacji, Unisystem
+    sporządza dokładny projekt nowej aplikacji. Następnie klient zapoznaje się ponownie z projektem i po akceptacji oraz
+    opłaceniu kosztów toolingu, Unisystem wykonuje próbki zaprojektowanego urządzenia (20 – 40 dni roboczych). Po zatwierdzeniu
+    próbek, klient może złożyć zamówienie produkcyjne. Proszę zwrócić uwagę, że podane terminy są typowe dla większości projektów,
+    jednakże w szczególnych przypadkach mogą ulec zmianie.</p>
+
+<p class="desc">Zachęcamy do wykorzystania naszego
+    <strong>
+        <a href="#project">KONFIGURATORA </a>
+    </strong>. Z chęcią wesprzemy Państwa swoim doświadczeniem na każdym etapie projektu oraz pomożemy dobrać optymalne technologie
+    i rozwiązania.</p>
+
+<img class="custom" src="/media/img/static/customsPLpdf.svg">
+
+<br>
+<br>
+<br>
+
+
+<h2 id="project">Dobierz optymalne komponenty do swojego projektu</h2>
+<p class="cta">Wypełnij formularz, aby w ciągu 24h otrzymać ofertę</p>
+<br>
+
+
+
+<div id="mauticform_wrapper_productconfiguratorpl" class="mauticform_wrapper">
+    <form autocomplete="false" role="form" method="post" action="https://unisystem.mautic.net/form/submit?formId=12" id="mauticform_productconfiguratorpl"
+        data-mautic-form="productconfiguratorpl" enctype="multipart/form-data">
+        <div class="mauticform-error" id="mauticform_productconfiguratorpl_error"></div>
+        <div class="mauticform-message" id="mauticform_productconfiguratorpl_message"></div>
+        <div class="mauticform-innerform">
+
+
+            <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+                <div id="mauticform_productconfiguratorpl_wymiary" class="mauticform-row mauticform-text mauticform-field-1">
+                    <label id="mauticform_label_productconfiguratorpl_wymiary" for="mauticform_input_productconfiguratorpl_wymiary" class="mauticform-label">Wymiary</label>
+                    <input id="mauticform_input_productconfiguratorpl_wymiary" name="mauticform[wymiary]" value="" placeholder="orientacyjnie (mm x mm x mm)"
+                        class="mauticform-input" type="text" />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_typ_wyswietlacza" class="mauticform-row mauticform-radiogrp mauticform-field-2">
+                    <label class="mauticform-label" for="mauticform_radiogrp_radio_typ_wyswietlacza_EPaper1">Technologia wyświetlacza</label>
+                    <div class="mauticform-radiogrp-row">
+                        <label id="mauticform_radiogrp_label_typ_wyswietlacza_EPaper0" for="mauticform_radiogrp_radio_typ_wyswietlacza_EPaper0" class="mauticform-radiogrp-label">
+                            <input name="mauticform[typ_wyswietlacza]" class="mauticform-radiogrp-radio" name="mauticform[typ_wyswietlacza]" id="mauticform_radiogrp_radio_typ_wyswietlacza_EPaper0"
+                                type="radio" value="E-Paper" /> E-Paper
+                        </label>
+
+                        <label id="mauticform_radiogrp_label_typ_wyswietlacza_LCDSTN1" for="mauticform_radiogrp_radio_typ_wyswietlacza_LCDSTN1" class="mauticform-radiogrp-label">
+                            <input name="mauticform[typ_wyswietlacza]" class="mauticform-radiogrp-radio" name="mauticform[typ_wyswietlacza]" id="mauticform_radiogrp_radio_typ_wyswietlacza_LCDSTN1"
+                                type="radio" value="LCD-STN" /> LCD-STN
+                        </label>
+
+                        <label id="mauticform_radiogrp_label_typ_wyswietlacza_LCDTFT2" for="mauticform_radiogrp_radio_typ_wyswietlacza_LCDTFT2" class="mauticform-radiogrp-label">
+                            <input name="mauticform[typ_wyswietlacza]" class="mauticform-radiogrp-radio" name="mauticform[typ_wyswietlacza]" id="mauticform_radiogrp_radio_typ_wyswietlacza_LCDTFT2"
+                                type="radio" value="LCD-TFT" /> LCD-TFT
+                        </label>
+
+                        <label id="mauticform_radiogrp_label_typ_wyswietlacza_OLED3" for="mauticform_radiogrp_radio_typ_wyswietlacza_OLED3" class="mauticform-radiogrp-label">
+                            <input name="mauticform[typ_wyswietlacza]" class="mauticform-radiogrp-radio" name="mauticform[typ_wyswietlacza]" id="mauticform_radiogrp_radio_typ_wyswietlacza_OLED3"
+                                type="radio" value="OLED" /> OLED
+                        </label>
+
+                        <label id="mauticform_radiogrp_label_typ_wyswietlacza_inna4" for="mauticform_radiogrp_radio_typ_wyswietlacza_inna4" class="mauticform-radiogrp-label">
+                            <input name="mauticform[typ_wyswietlacza]" class="mauticform-radiogrp-radio" name="mauticform[typ_wyswietlacza]" id="mauticform_radiogrp_radio_typ_wyswietlacza_inna4"
+                                type="radio" value="inna" /> inna
+                        </label>
+                    </div>
+                    <div class="mauticform-radiogrp-row">
+                        <label id="mauticform_radiogrp_label_typ_wyswietlacza_bezwyswietlacza5" for="mauticform_radiogrp_radio_typ_wyswietlacza_bezwyswietlacza5"
+                            class="mauticform-radiogrp-label">
+                            <input name="mauticform[typ_wyswietlacza]" class="mauticform-radiogrp-radio" name="mauticform[typ_wyswietlacza]" id="mauticform_radiogrp_radio_typ_wyswietlacza_bezwyswietlacza5"
+                                type="radio" value="bez wyświetlacza" /> bez wyświetlacza
+                        </label>
+                    </div>
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_panel_dotykowy" class="mauticform-row mauticform-radiogrp mauticform-field-3">
+                    <label class="mauticform-label" for="mauticform_radiogrp_radio_panel_dotykowy_rezystancyjny1">Panel dotykowy</label>
+                    <div class="mauticform-radiogrp-row">
+                        <label id="mauticform_radiogrp_label_panel_dotykowy_rezystancyjny0" for="mauticform_radiogrp_radio_panel_dotykowy_rezystancyjny0"
+                            class="mauticform-radiogrp-label">
+                            <input name="mauticform[panel_dotykowy]" class="mauticform-radiogrp-radio" name="mauticform[panel_dotykowy]" id="mauticform_radiogrp_radio_panel_dotykowy_rezystancyjny0"
+                                type="radio" value="rezystancyjny" /> rezystancyjny
+                        </label>
+
+                        <label id="mauticform_radiogrp_label_panel_dotykowy_pojemnosciowy1" for="mauticform_radiogrp_radio_panel_dotykowy_pojemnosciowy1"
+                            class="mauticform-radiogrp-label">
+                            <input name="mauticform[panel_dotykowy]" class="mauticform-radiogrp-radio" name="mauticform[panel_dotykowy]" id="mauticform_radiogrp_radio_panel_dotykowy_pojemnosciowy1"
+                                type="radio" value="pojemnościowy" /> pojemnościowy
+                        </label>
+
+                        <label id="mauticform_radiogrp_label_panel_dotykowy_podczerwony2" for="mauticform_radiogrp_radio_panel_dotykowy_podczerwony2"
+                            class="mauticform-radiogrp-label">
+                            <input name="mauticform[panel_dotykowy]" class="mauticform-radiogrp-radio" name="mauticform[panel_dotykowy]" id="mauticform_radiogrp_radio_panel_dotykowy_podczerwony2"
+                                type="radio" value="podczerwony" /> podczerwony
+                        </label>
+
+                        <label id="mauticform_radiogrp_label_panel_dotykowy_brak3" for="mauticform_radiogrp_radio_panel_dotykowy_brak3" class="mauticform-radiogrp-label">
+                            <input name="mauticform[panel_dotykowy]" class="mauticform-radiogrp-radio" name="mauticform[panel_dotykowy]" id="mauticform_radiogrp_radio_panel_dotykowy_brak3"
+                                type="radio" value="brak" /> brak
+                        </label>
+                    </div>
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_srodowisko" class="mauticform-row mauticform-checkboxgrp mauticform-field-4">
+                    <label class="mauticform-label" for="mauticform_checkboxgrp_checkbox_srodowisko_outdoor1">Środowisko</label>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_srodowisko_outdoor0" for="mauticform_checkboxgrp_checkbox_srodowisko_outdoor0" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[srodowisko][]" id="mauticform_checkboxgrp_checkbox_srodowisko_outdoor0"
+                                type="checkbox" value="outdoor" /> outdoor
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_srodowisko_semioutdoor1" for="mauticform_checkboxgrp_checkbox_srodowisko_semioutdoor1"
+                            class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[srodowisko][]" id="mauticform_checkboxgrp_checkbox_srodowisko_semioutdoor1"
+                                type="checkbox" value="semi-outdoor" /> semi-outdoor
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_srodowisko_indoor2" for="mauticform_checkboxgrp_checkbox_srodowisko_indoor2" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[srodowisko][]" id="mauticform_checkboxgrp_checkbox_srodowisko_indoor2"
+                                type="checkbox" value="indoor" /> indoor
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_srodowisko_pracawtrudnychwarunkach3" for="mauticform_checkboxgrp_checkbox_srodowisko_pracawtrudnychwarunkach3"
+                            class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[srodowisko][]" id="mauticform_checkboxgrp_checkbox_srodowisko_pracawtrudnychwarunkach3"
+                                type="checkbox" value="praca w trudnych warunkach" /> praca w trudnych warunkach
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_srodowisko_inne4" for="mauticform_checkboxgrp_checkbox_srodowisko_inne4" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[srodowisko][]" id="mauticform_checkboxgrp_checkbox_srodowisko_inne4"
+                                type="checkbox" value="inne" /> inne
+                        </label>
+                    </div>
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_zakres_temperatur_pracy_m" class="mauticform-row mauticform-text mauticform-field-5">
+                    <label id="mauticform_label_productconfiguratorpl_zakres_temperatur_pracy_m" for="mauticform_input_productconfiguratorpl_zakres_temperatur_pracy_m"
+                        class="mauticform-label">Zakres temperatur pracy</label>
+                    <input id="mauticform_input_productconfiguratorpl_zakres_temperatur_pracy_m" name="mauticform[zakres_temperatur_pracy_m]"
+                        value="" placeholder="(min.—max. °C)" class="mauticform-input" type="text" />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_branza" class="mauticform-row mauticform-checkboxgrp mauticform-field-6">
+                    <label class="mauticform-label" for="mauticform_checkboxgrp_checkbox_branza_militarna1">Branża</label>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_militarna0" for="mauticform_checkboxgrp_checkbox_branza_militarna0" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_militarna0"
+                                type="checkbox" value="militarna" /> militarna
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_automatykaprzemyslowa1" for="mauticform_checkboxgrp_checkbox_branza_automatykaprzemyslowa1"
+                            class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_automatykaprzemyslowa1"
+                                type="checkbox" value="automatyka przemysłowa" /> automatyka przemysłowa
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_medyczna2" for="mauticform_checkboxgrp_checkbox_branza_medyczna2" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_medyczna2"
+                                type="checkbox" value="medyczna" /> medyczna
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_transport3" for="mauticform_checkboxgrp_checkbox_branza_transport3" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_transport3"
+                                type="checkbox" value="transport" /> transport
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_POS4" for="mauticform_checkboxgrp_checkbox_branza_POS4" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_POS4"
+                                type="checkbox" value="POS" /> POS
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_digitalsignage5" for="mauticform_checkboxgrp_checkbox_branza_digitalsignage5"
+                            class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_digitalsignage5"
+                                type="checkbox" value="digital signage" /> digital signage
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_IOT6" for="mauticform_checkboxgrp_checkbox_branza_IOT6" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_IOT6"
+                                type="checkbox" value="IOT" /> IOT
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_IIOT7" for="mauticform_checkboxgrp_checkbox_branza_IIOT7" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_IIOT7"
+                                type="checkbox" value="IIOT" /> IIOT
+                        </label>
+                    </div>
+                    <div class="mauticform-checkboxgrp-row">
+                        <label id="mauticform_checkboxgrp_label_branza_inna8" for="mauticform_checkboxgrp_checkbox_branza_inna8" class="mauticform-checkboxgrp-label">
+                            <input class="mauticform-checkboxgrp-checkbox" name="mauticform[branza][]" id="mauticform_checkboxgrp_checkbox_branza_inna8"
+                                type="checkbox" value="inna" /> inna
+                        </label>
+                    </div>
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_planowane_rozpoczecie_pro" class="mauticform-row mauticform-text mauticform-field-7">
+                    <label id="mauticform_label_productconfiguratorpl_planowane_rozpoczecie_pro" for="mauticform_input_productconfiguratorpl_planowane_rozpoczecie_pro"
+                        class="mauticform-label">Planowane rozpoczęcie produkcji</label>
+                    <input id="mauticform_input_productconfiguratorpl_planowane_rozpoczecie_pro" name="mauticform[planowane_rozpoczecie_pro]"
+                        value="" placeholder="(czas w miesiącach lub data)" class="mauticform-input" type="text" />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_ilosc_szacowane_roczne_za" class="mauticform-row mauticform-text mauticform-field-8">
+                    <label id="mauticform_label_productconfiguratorpl_ilosc_szacowane_roczne_za" for="mauticform_input_productconfiguratorpl_ilosc_szacowane_roczne_za"
+                        class="mauticform-label">Ilość (szacowane roczne zapotrzebowanie)</label>
+                    <input id="mauticform_input_productconfiguratorpl_ilosc_szacowane_roczne_za" name="mauticform[ilosc_szacowane_roczne_za]"
+                        value="" class="mauticform-input" type="text" />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_aplikacja_koncowa" class="mauticform-row mauticform-text mauticform-field-9">
+                    <label id="mauticform_label_productconfiguratorpl_aplikacja_koncowa" for="mauticform_input_productconfiguratorpl_aplikacja_koncowa"
+                        class="mauticform-label">Aplikacja końcowa</label>
+                    <input id="mauticform_input_productconfiguratorpl_aplikacja_koncowa" name="mauticform[aplikacja_koncowa]" value="" class="mauticform-input"
+                        type="text" />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_opis_wyswietlanej_tresci" class="mauticform-row mauticform-text mauticform-field-10">
+                    <label id="mauticform_label_productconfiguratorpl_opis_wyswietlanej_tresci" for="mauticform_input_productconfiguratorpl_opis_wyswietlanej_tresci"
+                        class="mauticform-label">Dodatkowe informacje</label>
+                    <textarea id="mauticform_input_productconfiguratorpl_opis_wyswietlanej_tresci" name="mauticform[opis_wyswietlanej_tresci]"
+                        class="mauticform-textarea"></textarea>
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_info" class="mauticform-row mauticform-freehtml mauticform-field-11">
+                    <div id="mauticform_input_productconfiguratorpl_info" name="mauticform[info]" value="" class="mauticform-freehtml">
+                        <br />
+                        <strong>Informacje kontaktowe</strong>
+                        <hr />
+                    </div>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_imie_i_nazwisko" data-validate="imie_i_nazwisko" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-12 mauticform-required">
+                    <label id="mauticform_label_productconfiguratorpl_imie_i_nazwisko" for="mauticform_input_productconfiguratorpl_imie_i_nazwisko"
+                        class="mauticform-label">Imię i nazwisko</label>
+                    <input id="mauticform_input_productconfiguratorpl_imie_i_nazwisko" name="mauticform[imie_i_nazwisko]" value="" class="mauticform-input"
+                        type="text" />
+                    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_firma" data-validate="firma" data-validation-type="text" class="mauticform-row mauticform-text mauticform-field-13 mauticform-required">
+                    <label id="mauticform_label_productconfiguratorpl_firma" for="mauticform_input_productconfiguratorpl_firma" class="mauticform-label">Firma</label>
+                    <input id="mauticform_input_productconfiguratorpl_firma" name="mauticform[firma]" value="" class="mauticform-input" type="text"
+                    />
+                    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-14 mauticform-required">
+                    <label id="mauticform_label_productconfiguratorpl_email" for="mauticform_input_productconfiguratorpl_email" class="mauticform-label">E-mail</label>
+                    <input id="mauticform_input_productconfiguratorpl_email" name="mauticform[email]" value="" class="mauticform-input" type="email"
+                    />
+                    <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_telefon" class="mauticform-row mauticform-tel mauticform-field-15">
+                    <label id="mauticform_label_productconfiguratorpl_telefon" for="mauticform_input_productconfiguratorpl_telefon" class="mauticform-label">Telefon</label>
+                    <input id="mauticform_input_productconfiguratorpl_telefon" name="mauticform[telefon]" value="" class="mauticform-input" type="tel"
+                    />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_wymagane" class="mauticform-row mauticform-freetext mauticform-field-16">
+                    <div id="mauticform_input_productconfiguratorpl_wymagane" name="mauticform[wymagane]" value="" class="mauticform-freetext">
+                        <span style="color: rgb(184, 49, 47);">*</span> - pola wymagane
+                    </div>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_nie_jestem_robotem" style="display: none;" class="mauticform-row mauticform-text mauticform-field-17">
+                    <label id="mauticform_label_productconfiguratorpl_nie_jestem_robotem" for="mauticform_input_productconfiguratorpl_nie_jestem_robotem"
+                        class="mauticform-label">Nie jestem robotem</label>
+                    <input id="mauticform_input_productconfiguratorpl_nie_jestem_robotem" name="mauticform[nie_jestem_robotem]" value="" class="mauticform-input"
+                        type="text" />
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+                </div>
+
+                <div id="mauticform_productconfiguratorpl_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-18">
+                    <button type="submit" name="mauticform[submit]" id="mauticform_input_productconfiguratorpl_submit" name="mauticform[submit]"
+                        value="" class="mauticform-button btn btn-default" value="1">Tak, chcę otrzymać wycenę</button>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="mauticform[formId]" id="mauticform_productconfiguratorpl_id" value="12" />
+        <input type="hidden" name="mauticform[return]" id="mauticform_productconfiguratorpl_return" value="" />
+        <input type="hidden" name="mauticform[formName]" id="mauticform_productconfiguratorpl_name" value="productconfiguratorpl"
+        />
+
+    </form>
+    <br>
+    <p class="policy">Wysyłanie zapytania jest równoznaczne ze zgodą na przetwarzanie danych w celu jego realizacji zgodnie z naszą
+        <a href="https://www.unisystem.pl/pl/privacy-policy-cookie-restriction-mode/">
+        polityką prywatności</a>.</p>
+</div>
